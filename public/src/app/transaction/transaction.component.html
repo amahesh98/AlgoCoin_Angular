@@ -1,0 +1,10 @@
+<h1>Ledger Transaction Details</h1>
+<h2>Detailed view of a transaction from the ledger</h2>
+
+<div *ngIf='showTask==true'>
+    <p>Transaction #{{index+1}}</p>
+    <p>{{task.action}} {{task.amount}} AlgoCoin</p>
+</div>
+<div *ngIf='showTask==false'>
+  <h3>Invalid index!</h3>
+</div>

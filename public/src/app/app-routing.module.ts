@@ -5,6 +5,7 @@ import { MineComponent } from './mine/mine.component'
 import { BuyComponent } from './buy/buy.component'
 import { SellComponent } from './sell/sell.component'
 import { LedgerComponent } from './ledger/ledger.component'
+import { TransactionComponent } from './transaction/transaction.component'
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -12,7 +13,7 @@ const routes: Routes = [
     { path:'buy', component:BuyComponent },
     { path:'sell', component:SellComponent },
     { path:'ledger', component:LedgerComponent },
-    { path:'transaction/:index', component:LedgerComponent}
+    { path:'transaction/:index', component:TransactionComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

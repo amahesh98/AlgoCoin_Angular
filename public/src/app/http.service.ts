@@ -45,4 +45,10 @@ export class HttpService {
   getHistory(){
     return this.history
   }
+  getTask(index){
+    if(index>=history.length || index<0){
+      return false
+    }
+    return this.history[index]
+  }
 }
