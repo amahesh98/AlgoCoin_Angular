@@ -1,0 +1,8 @@
+<h1>Buy AlgoCoins</h1>
+<h2>Your Coins: {{coins}}</h2>
+<h2>Current Value: ${{value}}.00</h2>
+<form (submit)='buy()'>
+  <input type='text' name='quantity' placeholder='quantity' [(ngModel)]='quantity'>
+  <input class='turnin' type='submit' value='BUY'>
+</form>
+<p>{{message}}</p>

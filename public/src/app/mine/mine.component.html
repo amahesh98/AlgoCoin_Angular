@@ -1,0 +1,9 @@
+<h1>Mine AlgoCoins</h1>
+<h2>Your Coins: {{coins}}</h2>
+<h3>Here you can mine AlgoCoins</h3>
+<h3>Simply enter the magic words, "Michael Choi", to earn 1 coin!</h3>
+<form (submit)='mineCoin()'>
+  <input type='text' name='response' placeholder='Michael Choi' [(ngModel)]="response">
+  <input class='turnin' type='submit' value='Mine'>
+</form>
+<h4>{{message}}</h4>
